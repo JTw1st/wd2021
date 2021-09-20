@@ -9,13 +9,16 @@
 </head>
 
 <body>
-    <h1>Yehor Miezientsev</h1>
+    <h1 id="me">Yehor Miezientsev</h1>
     <menu>
+        <li><a href="#me">Me :)</a></li>
         <li><a href="#mystudy">My Study</a></li>
+        <li><a href="#myskills">My Skills</a></li>
+        <li><a href="#contactme">Drop me a line</a></li>
     </menu>
     <p><strong>Hey!</strong> My name is Yehor Miezientsev and I'm perspective student of Taras Shevchenko National
         University of Kyiv. Frankly speaking, I already have an experience working for some major corporations, such
-        as:<em> Tesla, SpaceX, Microsoft, Oracle </em> many many others. I consult top 10 CTO and CISO like Mark
+        as:<em> Tesla, SpaceX, Microsoft, Oracle </em> and many many others. I consult top 10 CTO and CISO like Mark
         McArdle, Ryan Fay, Mike D. Kail, Oliver Bussmann and so much more.</p>
 
     <h2 id="mystudy">My Study</h2>
@@ -25,7 +28,7 @@
         took me 5 years to get my PhD. But this doesn't answer the question, righ? Yeah, I have to spend my time in
         Ukraine cause my friends own some gas pumping facilities there and I, as a professional in information security,
         should make sure that everything on the technical side is secure and inaccessible by adversaries.</p>
-    <h2>My Skills</h2>
+    <h2 id="myskills">My Skills</h2>
     <p>Moving up to my skills. Well, there are plenty of them. On my weekends I usually fly to the UK to meet my friends
         and play golf. Otherwise I spend the entire days studying networking (no, that's not just communication with
         people). I attend Mikrotik courses and have plenty of their certs, such as</p>
@@ -37,16 +40,39 @@
             <li>MTCTCE</li>
             <li>MTCWE</li>
             <li>MTCEWE</li>
-            <li>MTCINE</li>
             <li>MTCSWE</li>
+            <li>MTCINE</li>
         </ul>
     </a>
-    <p>You can find the copies of them by clicking on this fancy icon --></p>
+    <p>You can find the copies of them by clicking on this fancy icon <a href="cert.html">--></a></p>
 
-    <p>Contact form? Dude, there is no way you can reach me. But you can always try, right?
+    <h2 id="contactme"><p>Contact form?</p></h2> 
+    <p>Dude, there is no way you can reach me. But you can always try, right?
         Maybe I've left some clues in the POST request, you are sending when submitting the form. (:suspicious)</p>
+    <form action="process.php" method="POST">
+        <div>
+            <label>Your name</label>
+            <input type="text" placeholder="Put your name here" name="firstName">
+        </div>
+        <br>
+        <div>
+            <label>Your second name (the last one)</label>
+            <input type="text" placeholder="Put your last name here" name="lastName">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="You got this, right?" name="email">
+        </div>
+        <div>
+            <label>Message</label>
+            <textarea name="message" cols="40" rows="10" placeholder="Well, there is no point in writing here, cause I have no backend to receive your message. But if you wanna, why not?"></textarea>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
 
-    <p>Footer, thoroughly copyrighted, Yehor Miezientsev's work.</p>
+    <hr>
+    <footer>&copy; 2021 thoroughly copyrighted, Yehor Miezientsev's work</footer>
 
 </body>
 
