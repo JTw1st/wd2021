@@ -1,0 +1,58 @@
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &_fz14 {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}
+
+.subtitle {
+    z-index: 1;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+
+    &::before {
+        @include before_circle;
+        top: -7px;
+        left: 0px;
+    }
+
+    &_mode {
+        width: 60px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        text-align: center;
+
+        &::before {
+            left: 12px;
+        }
+    }
+}
+
+.maintitle {
+    font-weight: bold;
+    font-size: 36px;
+
+    &_mode {
+        text-align: center;
+    }
+}
+.divider {
+    width: 60px;
+    height: 2px;
+    border: 3px solid $main-color;
+    margin: 0 auto;
+    margin-top: 30px;
+}

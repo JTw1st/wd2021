@@ -1,0 +1,127 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+
+    span.long {
+        width: 36px;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+
+
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    nav {
+        margin: auto 0;
+    }
+
+    &_block {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 345px;
+        height: 100%;
+        background-color: $main-color;
+        margin: auto 0 auto;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        z-index: 11;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            background-color: #f9f9fd;
+            width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: $main-color;
+
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background: linear-gradient(180deg, #a1349c, #a15791);
+            
+        }
+
+    }
+
+    &_close {
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    &_link {
+        list-style-type: circle;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000;
+
+
+        a {
+            color: #000;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    &_list {
+        li {
+            line-height: 50px;
+
+        }
+
+    }
+
+    &_social {
+        margin: 0 auto;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        svg path {
+            transition: .5s all;
+        }
+    }
+
+    &_overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: .4;
+    }
+}

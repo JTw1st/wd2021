@@ -1,0 +1,32 @@
+.adds {
+    padding: 140px 10px 130px 10px;
+
+    &_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 49%);
+        gap: 13px;
+        margin-top: 60px;
+
+    }
+
+    &_item {
+        padding: 29px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &_bold {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    &_descr {
+        font-weight: 500;
+        font-size: 13px
+    }
+}
