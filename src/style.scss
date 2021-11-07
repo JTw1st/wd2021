@@ -1,0 +1,10 @@
+#wind-direction {
+  display: inline-block;
+}
+
+.inline-control {
+  display: flex;
+  label {
+    margin-right: 5px;
+  }
+}

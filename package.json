@@ -1,0 +1,23 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "browserslist": [
+    "since 2017-06"
+  ],
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "description": ""
+}

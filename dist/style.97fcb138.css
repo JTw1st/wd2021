@@ -1,0 +1,12 @@
+#wind-direction {
+  display: inline-block;
+}
+
+.inline-control {
+  display: flex;
+}
+.inline-control label {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

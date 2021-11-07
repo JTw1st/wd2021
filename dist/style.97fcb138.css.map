@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE;;AACA;EACE","file":"style.97fcb138.css","sourceRoot":"..\\src","sourcesContent":["#wind-direction {\r\n  display: inline-block;\r\n}\r\n\r\n.inline-control {\r\n  display: flex;\r\n  label {\r\n    margin-right: 5px;\r\n  }\r\n}"]}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/style.97fcb138.css">
+<script src="/style.97fcb138.js"></script></head>
+<body>
+<script type="module" src="/app.c328ef1a.js"></script>
+<div>
+    <h1>Weather</h1>
+    <div class="inline-control">
+        <label>Data source:</label>
+        <select id="source-select">
+            <option value="api">OpenWeather API</option>
+            <option value="testApi">Test API</option>
+            <option value="file">Local file</option>
+        </select>
+    </div>
+    <h2 id="location"></h2>
+    <div>Temperature: <span id="temp"></span> °C (<span id="temp-range"></span> °C)</div>
+    <div>Feels like: <span id="feels-like"></span> °C</div>
+    <div>Pressure: <span id="pressure"></span> mm</div>
+    <div>Humidity: <span id="humidity"></span>%</div>
+    <hr>
+    <div>Wind: <div id="wind-direction">↑</div> <span id="wind"></span> km/h </div>
+<!--    <div>Rain: <span id="rain"></span> cm</div>-->
+    <div>Clouds: <span id="clouds"></span> %</div>
+    <div>Sunrise: <span id="sunrise"></span></div>
+    <div>Sunset: <span id="sunset"></span></div>
+</div>
+
+</body>
+</html>
