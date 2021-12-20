@@ -1,0 +1,19 @@
+.card-content{
+  width: 550px;
+  margin: 3rem 5rem;
+  background: #eee;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input{
+  width: 234px;
+  margin-top: 10px;
+  margin-bottom:  10px;
+  height: 40px;
+
+}
